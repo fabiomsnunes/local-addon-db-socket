@@ -1,0 +1,28 @@
+{
+  "name": "local-addon-db-socket",
+  "productName": "Local DB Socket",
+  "version": "1.0.0",
+  "description": "Automatically patches wp-config.php with the correct MySQL socket path on site start, so global WP-CLI works from any terminal.",
+  "slug": "db-socket",
+  "main": "lib/main.js",
+  "icon": "icon.svg",
+  "bgColor": "#1E1E2E",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  },
+  "author": "Fábio Nunes | WPlus <geral@wplus.pt>",
+  "devDependencies": {
+    "@getflywheel/local": "^8.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  },
+  "license": "MIT"
+}
